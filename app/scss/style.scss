@@ -1,0 +1,30 @@
+// ---- ---- reset ---- ---- //
+// @import 'slick.scss';
+// @import 'jquery.fancybox.scss';
+@import 'normalize.scss';
+@import 'myreset.scss';
+@import 'global.scss';
+
+// ---- ---- fonts ---- ---- //
+@font-face {
+}
+// ---- ---- main ---- ---- //
+.header {
+  padding-top: 25px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  &__list {
+    display: flex;
+    gap: 0 40px;
+    padding-top: 25px;
+    font-size: 16px;
+    color: $color_dark;
+  }
+}
+
+// ---- ---- media ---- ---- //
+@import 'media.scss';

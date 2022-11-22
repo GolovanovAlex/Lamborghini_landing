@@ -1,0 +1,23 @@
+// ---- ---- color ---- ---- //
+// $color_light: #ffffff;
+$color_text: #040404;
+$color_dark: #363636;
+// $color_accent: #ffb240;
+// $color_bgdark: #0f1010;
+
+// ---- ---- main ---- ---- //
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color_text;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+// ---- ---- title ---- ---- //
