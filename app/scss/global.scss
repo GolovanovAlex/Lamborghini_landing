@@ -1,8 +1,15 @@
+// ---- ---- fonts ---- ---- //
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/Impact.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
 // ---- ---- color ---- ---- //
-// $color_light: #ffffff;
+$color_light: #ffffff;
 $color_text: #040404;
 $color_dark: #363636;
-// $color_accent: #ffb240;
+$color_accent: #9f6b08;
 // $color_bgdark: #0f1010;
 
 // ---- ---- main ---- ---- //
@@ -15,9 +22,29 @@ body {
   min-width: 300px;
   overflow-x: hidden;
 }
-.container {
+.container-big {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
 }
+.container {
+  max-width: 920px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
 // ---- ---- title ---- ---- //
+.title {
+  color: $color_text;
+  &__h1 {
+    font-size: 76px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  &__h3 {
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
