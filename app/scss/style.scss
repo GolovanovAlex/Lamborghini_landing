@@ -1,10 +1,8 @@
 // ---- ---- reset ---- ---- //
-// @import 'slick.scss';
-// @import 'jquery.fancybox.scss';
+@import 'slick.scss';
 @import 'normalize.scss';
 @import 'myreset.scss';
 @import 'global.scss';
-
 // ---- ---- main ---- ---- //
 .header {
   padding-top: 25px;
@@ -13,7 +11,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .menu {
   &__list {
     display: flex;
@@ -31,8 +28,11 @@
   &__logo {
     z-index: 10;
   }
-}
-.main {
+  &__link {
+    &:hover {
+      border-bottom: 2px solid $color_accent;
+    }
+  }
 }
 .promo {
   background-image: url(../images/bg/bg_header.jpg);
@@ -74,6 +74,16 @@
     align-self: center;
     margin-top: auto;
     margin-bottom: 30px;
+    &:hover {
+      svg {
+        transition: 0.5s ease;
+        transform: scale(1.6);
+        path {
+          transition: 0.5s ease;
+          stroke: $color_accent;
+        }
+      }
+    }
   }
 }
 .info {
@@ -270,8 +280,155 @@
       display: flex;
       color: $color_light;
     }
+    transition: 0.5s ease;
+    &:hover {
+      transform: scale(1.6);
+    }
   }
 }
-
+.blog {
+  &__title {
+    margin-bottom: 80px;
+    position: relative;
+  }
+  &__slider-list {
+    margin-bottom: 100px;
+  }
+  &__slider-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__slider-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__slider-text {
+    margin-bottom: 10px;
+  }
+  &__slider-more {
+    font-size: 12px;
+    color: $color_dark;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+    margin-bottom: 100px;
+  }
+  &__quote-box {
+    max-width: 434px;
+  }
+  &__quote {
+    margin-bottom: 30px;
+  }
+  &__quote-title {
+    font-size: 12px;
+    color: $color_accent;
+    margin-bottom: 4px;
+  }
+  &__quote-name {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__quote-text {
+    font-style: italic;
+  }
+  &__img {
+    max-width: 406px;
+  }
+}
+.slick-slide {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-arrow {
+  position: absolute;
+  top: -50px;
+  left: 51.3%;
+  cursor: pointer;
+  &__left {
+    left: 45.4%;
+  }
+}
+.footer {
+  padding: 100px 0 80px;
+  background-color: $color_dark;
+  font-size: 16px;
+  color: $color_light;
+  &__title {
+    color: $color_light;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+  &__contact-title {
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  &__contect-tel {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__social {
+    display: flex;
+    gap: 0 30px;
+    margin-top: 50px;
+  }
+  &__social-link {
+    &--youtube {
+      &:hover {
+        svg {
+          path {
+            stroke: $color_accent;
+          }
+        }
+      }
+    }
+    &--insta {
+      &:hover {
+        svg path {
+          stroke: $color_accent;
+        }
+        svg path:last-child {
+          fill: $color_accent;
+        }
+      }
+    }
+    &--facebook {
+      &:hover {
+        svg {
+          path {
+            fill: $color_accent;
+          }
+        }
+      }
+    }
+  }
+  &__map-text {
+    margin-bottom: 20px;
+  }
+  &__map-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info-text {
+    font-size: 14px;
+    &:hover {
+      border-bottom: 1px solid $color_accent;
+    }
+  }
+}
 // ---- ---- media ---- ---- //
 @import 'media.scss';

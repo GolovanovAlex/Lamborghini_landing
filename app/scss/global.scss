@@ -10,8 +10,6 @@ $color_light: #ffffff;
 $color_text: #040404;
 $color_dark: #363636;
 $color_accent: #9f6b08;
-// $color_bgdark: #0f1010;
-
 // ---- ---- main ---- ---- //
 body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -41,7 +39,6 @@ body {
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
-
   &__h3 {
     font-size: 32px;
     font-weight: 300;
