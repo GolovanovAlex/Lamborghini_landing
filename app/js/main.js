@@ -1,7 +1,7 @@
 $(function () {
   // ---- ---- shop-slider ---- ---- //
   $('.blog__slider-list').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow:
@@ -29,3 +29,40 @@ for (let anchor of anchors) {
     });
   });
 }
+// ---- ---- modals  ---- ---- //
+const btns = document.querySelectorAll('.blog__slider-more');
+const modalOverlay = document.querySelector('.blog__modal-box');
+const modals = document.querySelectorAll('.blog__modal-item');
+const btnClose = document.querySelectorAll('.blog__modal-btn');
+
+btns.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    let path = e.currentTarget.getAttribute('data-path');
+
+    modals.forEach((el) => {
+      el.classList.remove('blog__modal-item--visible');
+    });
+
+    document
+      .querySelector(`[data-target="${path}"]`)
+      .classList.add('blog__modal-item--visible');
+    modalOverlay.classList.add('blog__modal-box--visible');
+  });
+});
+
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target == modalOverlay) {
+    modalOverlay.classList.remove('blog__modal-box--visible');
+    modals.forEach((el) => {
+      el.classList.remove('blog__modal-item--visible');
+    });
+  }
+});
+btnClose.forEach((el) => {
+  el.addEventListener('click', () => {
+    modals.forEach((el) => {
+      el.classList.remove('blog__modal-item--visible');
+    });
+    modalOverlay.classList.remove('blog__modal-box--visible');
+  });
+});
