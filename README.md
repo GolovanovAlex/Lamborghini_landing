@@ -1,5 +1,6 @@
 # Lamborghini Race landing
-![Under construction](https://p.kindpng.com/picc/s/46-465620_under-construction-icon-png-transparent-png.png)
+
+![Under construction](readme/underconstruction.gif)
 
 ### Use Skills
 
@@ -14,7 +15,7 @@
 
 ---
 
-[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/GoSurf_landing/)
+[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/Lamborghini_landing/)
 
 ## Info
 
@@ -23,7 +24,7 @@
 Создано на основе ролика с YouTube канала [От 0 до 1](https://www.youtube.com/c/%D0%9E%D1%820%D0%B4%D0%BE1)
 
 Верстка полноценного сайта-лендинга. Работа с **HTML**, **CSS** и **JS**.  
-Использование препроцессинга **SASS**, библиотеки **JQuery**, библиотеки **Animate**, слайдера **Slick** и сборщика **Gulp**.  
+Использование препроцессинга **SASS**, библиотеки **JQuery**, слайдера **Slick** и сборщика **Gulp**.  
 Пройдена валидация HTML и CSS, а так же производительность с помощью **PageSpeed Insights**.
 
 ---
