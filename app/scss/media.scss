@@ -15,6 +15,13 @@
     font-size: 66px;
   }
 }
+
+@media (max-width: 930px) {
+  .evo-dark__descr {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
 @media (max-width: 900px) {
   .menu {
     &__logo {
@@ -83,6 +90,33 @@
       margin: 25px auto 0;
     }
   }
+  .evo-dark {
+    &__title {
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+    &__box {
+      display: block;
+    }
+    &__content {
+      max-width: 100%;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__descr {
+      flex-wrap: wrap;
+      div {
+        gap: 0;
+        width: 55%;
+        margin-bottom: 15px;
+      }
+      div:nth-child(2),
+      div:nth-child(4) {
+        width: 35%;
+      }
+    }
+  }
 }
 @media (max-width: 675px) {
   .title__h3 {
@@ -124,6 +158,25 @@
   }
 }
 
+@media (max-width: 450px) {
+  .evo-dark {
+    &__title {
+      margin-bottom: 20px;
+      padding-right: 0;
+    }
+    &__descr {
+      display: block;
+      div {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      div:nth-child(2),
+      div:nth-child(4) {
+        width: 100%;
+      }
+    }
+  }
+}
 @media (max-width: 430px) {
   .promo {
     background-position: 17%;
