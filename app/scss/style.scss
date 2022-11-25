@@ -18,6 +18,7 @@
     padding-top: 25px;
     font-size: 16px;
     color: $color_dark;
+    z-index: 20;
     &--left {
       padding-left: 25px;
     }
@@ -35,17 +36,19 @@
   }
 }
 .promo {
+  position: relative;
   background-image: url(../images/bg/bg_header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   margin-top: -140px;
+
   &__inner {
     display: flex;
     flex-direction: column;
     font-family: 'Impact', sans-serif;
     text-align: center;
-    min-height: calc(100vh);
+    min-height: 102vh;
     padding-top: 98px;
   }
   &__title {
@@ -114,6 +117,7 @@
     }
   }
   &__img {
+    width: 100%;
     object-fit: cover;
   }
   &__box {

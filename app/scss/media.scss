@@ -1,3 +1,153 @@
 // ---- ---- media ---- ---- //
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
+  .promo {
+    background-position: 20%;
+  }
+}
+@media (max-width: 1000px) {
+  .menu__list {
+    gap: 0 20px;
+    &--right {
+      padding-right: 60px;
+    }
+  }
+  .title__h1 {
+    font-size: 66px;
+  }
+}
+@media (max-width: 900px) {
+  .menu {
+    &__logo {
+      margin: 0 auto;
+    }
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu {
+    &__list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 320px;
+      background-image: url(../images/bg/dec_01.svg);
+      background-size: contain;
+      background-color: $color_dark;
+      color: $color_light;
+      z-index: 20;
+      transition: all 0.3s ease;
+      transform: translateX(-120%);
+      &.active {
+        transform: translateX(0);
+      }
+      &--left {
+        background-position: 50%;
+        padding: 45px 0 0 0;
+      }
+      &--right {
+        top: 180px;
+        padding: 0 0 25px 0;
+        background-position: 25%;
+      }
+    }
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+  .info__box {
+    img {
+      object-fit: contain;
+    }
+  }
+  .track__img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 745px) {
+  .info__box {
+    display: block;
+    .info__text {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    img {
+      display: block;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+    .info__table {
+      margin: 25px auto 0;
+    }
+  }
+}
+@media (max-width: 675px) {
+  .title__h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .info {
+    &__title {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    &__inner {
+      display: block;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__box {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .track {
+    &__text {
+      max-width: 100%;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .promo {
+    background-position: 17%;
+    &__title {
+      font-size: 50px;
+      margin: 0 0 25px 0;
+    }
+    &__text {
+      font-size: 36px;
+      text-shadow: 0px 0px 1px #000000;
+    }
+    &__location {
+      color: $color_light;
+      text-shadow: 1px 1px 1px #000000;
+    }
+  }
+  .info__table {
+    font-size: 12px;
+    td {
+      padding-bottom: 10px;
+    }
+    td + td {
+      text-align: center;
+      padding-left: 0px;
+    }
+  }
 }

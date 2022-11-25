@@ -9,12 +9,19 @@ $(function () {
     nextArrow:
       '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="slick-arrow slick-arrow__right">  <path d="M2.50962 7.78867L15 0.57735L27.4904 7.78867V22.2113L15 29.4227L2.50962 22.2113V7.78867Z" stroke="#9F6B08"/> <path d="M20.3536 15.3536C20.5488 15.1583 20.5488 14.8417 20.3536 14.6464L17.1716 11.4645C16.9763 11.2692 16.6597 11.2692 16.4645 11.4645C16.2692 11.6597 16.2692 11.9763 16.4645 12.1716L19.2929 15L16.4645 17.8284C16.2692 18.0237 16.2692 18.3403 16.4645 18.5355C16.6597 18.7308 16.9763 18.7308 17.1716 18.5355L20.3536 15.3536ZM10 15.5H20V14.5H10V15.5Z" fill="#9F6B08"/></svg>',
   });
-
-  // ---- ---- click menu ---- ---- //
-  $('.menu-btn').on('click', function () {
-    $('.menu, .menu-btn').toggleClass('active');
-  });
 });
+// ---- ---- click menu ---- ---- //
+const button = document.querySelector('.menu-btn');
+const menuIcon = document.querySelector('.menu-btn__icon');
+const menuListLeft = document.querySelector('.menu__list--left');
+const menuListRight = document.querySelector('.menu__list--right');
+
+button.onclick = function () {
+  menuListLeft.classList.toggle('active');
+  menuListRight.classList.toggle('active');
+  menuIcon.classList.toggle('active');
+};
+
 // ---- ---- scroll  ---- ---- //
 const anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
