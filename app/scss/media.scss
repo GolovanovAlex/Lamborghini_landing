@@ -14,12 +14,26 @@
   .title__h1 {
     font-size: 66px;
   }
+  .evo-light__inner::after {
+    top: 145px;
+    left: 560px;
+  }
+  .evo-light__video {
+    background-size: contain;
+  }
 }
 
 @media (max-width: 930px) {
   .evo-dark__descr {
     justify-content: space-between;
     gap: 0;
+  }
+  .evo-light__inner::before {
+    left: 300px;
+  }
+  .evo-light__inner::after {
+    top: 140px;
+    left: 450px;
   }
 }
 @media (max-width: 900px) {
@@ -73,6 +87,24 @@
     max-width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .evo-light {
+    &__inner::before {
+      top: -10px;
+      left: 280px;
+    }
+    &__inner::after {
+      top: 190px;
+      left: 385px;
+    }
+    &__text--two {
+      max-width: 370px;
+    }
+    &__text--three {
+      max-width: 450px;
+    }
+  }
+}
 
 @media (max-width: 745px) {
   .info__box {
@@ -117,6 +149,16 @@
       }
     }
   }
+  .evo-light {
+    &__inner::before {
+      top: -50px;
+      left: 260px;
+    }
+    &__inner::after {
+      top: 160px;
+      left: 360px;
+    }
+  }
 }
 @media (max-width: 675px) {
   .title__h3 {
@@ -154,6 +196,26 @@
   .menu {
     &__list {
       width: 100%;
+    }
+  }
+  .evo-dark__inner::before {
+    top: 180px;
+    left: -67px;
+    background-size: contain;
+  }
+  .evo-dark__inner::after {
+    top: 300px;
+    left: 0;
+    width: 370px;
+    height: 500px;
+    background-size: contain;
+  }
+  .evo-light__video-link {
+    &:hover {
+      transform: scale(1.6);
+      span {
+        color: $color_accent;
+      }
     }
   }
 }
@@ -202,5 +264,14 @@
       text-align: center;
       padding-left: 0px;
     }
+  }
+}
+@media (max-width: 400px) {
+  .evo-dark__inner::before {
+    top: 210px;
+    left: -85px;
+  }
+  .evo-dark__inner::after {
+    width: 275px;
   }
 }
