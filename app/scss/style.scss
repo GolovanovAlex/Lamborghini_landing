@@ -386,13 +386,11 @@
     max-width: 406px;
   }
 }
-
 .blog__modal-box--visible {
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease-in-out;
 }
-
 .blog__modal-item--visible {
   display: block;
 }
@@ -450,6 +448,7 @@
   &__contect-tel {
     display: block;
     margin-bottom: 10px;
+    max-width: fit-content;
   }
   &__social {
     display: flex;
