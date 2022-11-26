@@ -309,6 +309,7 @@
     margin-bottom: 10px;
   }
   &__slider-text {
+    min-height: 100px;
     margin-bottom: 10px;
   }
   &__slider-more {
@@ -408,6 +409,24 @@
   cursor: pointer;
   &__left {
     left: 45.4%;
+  }
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  button {
+    width: 13px;
+    height: 13px;
+    background-color: $color_dark;
+    border-radius: 50%;
+    font-size: 0;
+  }
+  .slick-active {
+    button {
+      background-color: $color_accent;
+    }
   }
 }
 .footer {

@@ -104,6 +104,10 @@
       max-width: 450px;
     }
   }
+  .blog__img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 @media (max-width: 745px) {
@@ -156,10 +160,44 @@
     }
     &__inner::after {
       top: 160px;
-      left: 360px;
+      left: 345px;
     }
   }
 }
+
+@media (max-width: 700px) {
+  .evo-light {
+    &__inner::after {
+      top: 330px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    &__text--two {
+      max-width: 100%;
+    }
+    &__text--three {
+      margin-top: 320px;
+      max-width: 100%;
+    }
+    &__video {
+      margin-top: 50px;
+      height: 140px;
+    }
+  }
+  .slick-arrow {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: translateX(100%);
+    &__left {
+      transform: translateX(-100%);
+    }
+  }
+}
+
 @media (max-width: 675px) {
   .title__h3 {
     text-align: center;
@@ -191,6 +229,44 @@
       margin-bottom: 20px;
     }
   }
+  .blog {
+    &__box {
+      flex-direction: column;
+    }
+    &__quote-box {
+      max-width: 100%;
+    }
+    &__img {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .evo-light {
+    &__inner {
+      padding-top: 30px;
+    }
+    &__inner::before {
+      top: 90px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    &__inner::after {
+      top: 450px;
+    }
+    &__text--one {
+      max-width: 100%;
+    }
+    &__text--two {
+      margin-top: 265px;
+    }
+    &__text--three {
+      margin-top: 340px;
+    }
+  }
 }
 @media (max-width: 500px) {
   .menu {
@@ -218,6 +294,12 @@
       }
     }
   }
+  .slick-arrow {
+    transform: translateX(70%);
+    &__left {
+      transform: translateX(-70%);
+    }
+  }
 }
 
 @media (max-width: 450px) {
@@ -236,6 +318,14 @@
       div:nth-child(4) {
         width: 100%;
       }
+    }
+  }
+  .evo-light {
+    &__inner::before {
+      top: 9%;
+    }
+    &__inner::after {
+      top: 45%;
     }
   }
 }
@@ -273,5 +363,16 @@
   }
   .evo-dark__inner::after {
     width: 275px;
+  }
+}
+
+@media (max-width: 340px) {
+  .evo-light {
+    &__inner::before {
+      top: 11%;
+    }
+    &__inner::after {
+      top: 48%;
+    }
   }
 }
