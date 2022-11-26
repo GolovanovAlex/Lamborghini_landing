@@ -1,7 +1,5 @@
 # Lamborghini Race landing
 
-![Under construction](readme/underconstruction.gif)
-
 ### Use Skills
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -19,7 +17,7 @@
 
 ## Info
 
-<!--![Gifweb](readme/gifweb.webp)-->
+![Gifweb](readme/gifweb.webp)
 
 Создано на основе ролика с YouTube канала [От 0 до 1](https://www.youtube.com/c/%D0%9E%D1%820%D0%B4%D0%BE1)
 
@@ -31,7 +29,7 @@
 
 Респонсивный дизайн адаптирует сайт под любой экран устройства.
 
-<!--![GifMobile](readme/gifmobile.gif) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![GifMobile](readme/giftab.webp)-->
+![GifMobile](readme/gifmobile.webp) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![GifMobile](readme/giftab.webp)
 
 ---
 
