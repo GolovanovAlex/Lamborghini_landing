@@ -203,6 +203,10 @@
     font-size: 30px;
   }
   .info {
+    padding-top: 80px;
+    &__part {
+      margin-bottom: 50px;
+    }
     &__title {
       max-width: 100%;
       margin-bottom: 20px;
@@ -228,15 +232,29 @@
       margin-bottom: 20px;
     }
   }
+  .evo {
+    margin-bottom: 80px;
+  }
+  .evo-dark {
+    padding-top: 80px;
+  }
   .blog {
     &__box {
       flex-direction: column;
+      margin-bottom: 50px;
     }
     &__quote-box {
       max-width: 100%;
     }
     &__img {
       margin: 0 auto;
+    }
+  }
+  .footer {
+    padding: 80px 0 40px;
+
+    &__contact-title {
+      margin-top: 40px;
     }
   }
 }
@@ -264,6 +282,9 @@
     &__text--three {
       margin-top: 340px;
     }
+  }
+  .blog__modal-item {
+    padding: 30px 20px 30px 10px;
   }
 }
 @media (max-width: 500px) {
